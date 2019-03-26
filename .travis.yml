@@ -10,6 +10,9 @@ php:
 dist: trusty
 sudo: false
 
-install: travis_retry composer install --no-interaction --prefer-source
+before_script:
+- composer self-update
+- composer global require fxp/composer-asset-plugin
+- composer install --no-interaction --prefer-source
 
 script: vendor/bin/phpunit --verbose

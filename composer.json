@@ -26,5 +26,12 @@
     "psr-4": {
       "HughCube\\YiiCounter\\Tests\\": "tests"
     }
+  },
+  "config": {
+    "fxp-asset": {
+      "vcs-driver-options": {
+        "github-no-api": true
+      }
+    }
   }
 }
