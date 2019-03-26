@@ -1,0 +1,30 @@
+{
+  "name": "hughcube/yii-counter",
+  "description": "yii-counter",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "hugh.li",
+      "email": "hugh.li@foxmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "yiisoft/yii2": "^2.0",
+    "hughcube/counter": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "HughCube\\YiiCounter\\": "src"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.1",
+    "mockery/mockery": "^1.0"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "HughCube\\YiiCounter\\Tests\\": "tests"
+    }
+  }
+}
