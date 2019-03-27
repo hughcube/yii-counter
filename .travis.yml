@@ -1,17 +1,19 @@
 language: php
 
 php:
-- 7.0
-- 7.1
-- 7.2
-- 7.3
+  - 7.0
+  - 7.1
+  - 7.2
+  - 7.3
 
 dist: trusty
 sudo: false
 
 before_script:
-- composer self-update
-- composer global require fxp/composer-asset-plugin
-- composer install --no-interaction --prefer-dist
+  - composer self-update
+  - composer config minimum-stability dev
+  - composer config prefer-stable true
+  - composer global require fxp/composer-asset-plugin
+  - composer install --prefer-dist --no-interaction
 
 script: vendor/bin/phpunit --verbose
